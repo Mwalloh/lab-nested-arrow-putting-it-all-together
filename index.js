@@ -1,3 +1,8 @@
+let userInfo = {
+  username: "user1",
+  password: "password123"
+}
+
 function createLoginTracker(userInfo) {
 
   let attemptCount = 0;
@@ -19,12 +24,7 @@ function createLoginTracker(userInfo) {
 }
 
 // Executing the function
-const user = {
-  username: "user1",
-  password: "password123",
-};
-
-const login = createLoginTracker(user);
+const login = createLoginTracker(userInfo);
 console.log(login("password123"));
 
 module.exports = {
